@@ -15,7 +15,7 @@ const TodoForm = (props) => {
                 e.preventDefault()
                 props.dispatch({
                     type: 'ADD_TODO',
-                    payload: { item: todoText, completed: false, id: new Date() }
+                    payload: { item: todoText, completed: false, id: Date.now() }
                 })
                 setTodoText("")
             }}>
