@@ -8,8 +8,6 @@ function App() {
 
   const [todoList, dispatch] = useReducer(basicReducer, initialState)
 
-  console.log("App.js todoList", todoList)
-
   return (
     <div className="App">
       <h1>Todo List</h1>
