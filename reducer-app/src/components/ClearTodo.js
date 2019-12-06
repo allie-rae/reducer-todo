@@ -6,7 +6,7 @@ const ClearTodo = (props) => {
         className="clearTodos"
         onClick={(e) => {
             e.preventDefault()
-            props.dispatch({ type: 'REMOVE_TODO', payload: props.todoList.todos })}}
+            props.dispatch({ type: 'REMOVE_TODO' })}}
         >
             Clear Todos
     </button>
